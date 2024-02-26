@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GUESS</title>
+    </head>
+    <body>
+        <style>
+            .first-button{
+                color: brown;
+                border-color:aliceblue;
+            }
+            button{
+                color: blueviolet;
+                box-shadow: brown;
+                border-color:antiquewhite;
+                animation: hover;
+                animation-duration: 4s;
+                
+
+             }
+        </style>
+        <P>Cart Quantity</P>
+        <button onclick="console.log(`Cart Quantity: ${cartQuantity}`)" 
+        class="first-button";>Show Quantity</button>
+
+        <button onclick= "cartQuantity = cartQuantity +1;
+        //cartQuantity+= 2; This line of code is the same as above just shorter 
+        console.log(`Cart Quantity: ${cartQuantity}`)" class="second">add to cart</button>
+
+        <button onclick="cartQuantity = cartQuantity + 2; 
+        console.log(`Cart Quantity: ${cartQuantity}`)">+2</button>
+
+        <button>+3</button>
+
+        <button onclick="cartQuantity = 0; 
+        console.log('cart was Reset');
+         console.log(`Cart Quantity: ${cartQuantity}`)">Reset Cart</button>
+
+      <!-- <button class="1st button" onclick="alert('bull');">Click Me</button>
+    --> <script>
+           let cartQuantity = 0;
+           const variable= 3;
+           console.log(typeof variable);
+        </script>
+    </body>
+</html>
